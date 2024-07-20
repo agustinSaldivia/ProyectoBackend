@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+#container-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../Imagenes!/pesca-con-mosca-carretera-austral-1-e1611155242543.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.content-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    min-width: 380px;
+    max-width: 700px;
+    width: 90%;
+    height: auto;
+    background-color: rgba(250, 220, 220, 0.2);
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.login {
+    width: 100%;
+    max-width: 360px;
+    min-width: 360px;
+    padding: 30px 30px 50px 30px;
+    background-color: rgba(46, 41, 41, 0.45);
+    box-sizing: border-box;
+}
+
+.login label {
+    display: block;
+    font-family: 'Overpass', sans-serif;
+    font-size: 21px;
+    color:#000000;
+    margin-top: 15px;
+}
+
+.login .usuario-login {
+    font-family: 'Overpass', sans-serif;
+    font-size: 19px;
+    color: #000000;
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
+    border: none;
+    border-bottom: 3px solid #7af3ed;
+    border-right: 3px solid #297773;
+}
+
+.login .btn-login {
+    font-size: 23px;
+    color:#020303;
+    width: 310px;
+    height: 40px;
+    border: none;
+    border-top: 3px solid #239ee0;
+    border-left: 3px solid #297773;
+    background-color: rgba(206, 250, 244, 0.178);
+    margin-top: 10px;
+}
+
+.login .btn-login:hover {
+    background-color: #3c4245;
+    color:#dfcdc3;
+}
+
+.login-der {
+    text-align: center;
+    width: 100%;
+    padding:20px 20px 20px 50px;
+    box-sizing: border-box;
+}
+
+.login-der .titulo-login {
+    font-size: 35px;
+    color:#cac5c2;
+}
+
+.login-der .logo-empresa {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+
+hr {
+    border-top: 2px solid #8c8b8b;
+	border-bottom: 3px solid #dfcdc3;
+}
+
+.login-der .pie-form {
+    font-size: 35px;
+    text-align: center;    
+    margin-top: 10px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media all and (max-width: 990px)
+{
+    .content-login {
+        flex-direction:column-reverse;
+        min-width: 380px;
+        max-width: 900px;
+        width: 90%;
+        background-color: rgba(253, 211, 211, 0.2);
+        padding: 7px;
+        box-sizing: border-box;
+    }
+    
+    .login {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 12px 0px 20px 12px;
+    }
+    .login-der{
+        padding:20px 20px 20px 20px;     
+    }
+    .login-der .titulo-login{
+        font-size: 28px;
+    }
+    .login .btn-login {
+        width: 95%;
+    }
+    .login .usuario-login {
+        width: 90%;;
+    }
+    .login label {
+        text-align: left;
+    }
+
+}
